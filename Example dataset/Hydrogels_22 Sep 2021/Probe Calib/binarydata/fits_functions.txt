@@ -1,0 +1,323 @@
+v2.1.3.0
+FitsFunctions :[ 
+  :<
+    ListData :< 
+      Var := a
+      Type := Fit
+      Name := Contact Point
+      Unit := [um]
+    ListData :>
+    Hidden :< 
+      FFType := Fit
+      Fit :< 
+        Horizontal := Displacement
+        Vertical := Force A
+        Selected Fit := PowerFit
+        Selected Phases :[ 
+          :1|
+        Selected Phases :]
+        Selected Selector := VerticalSection
+      Fit :>
+      Function :< 
+        Selected Function := Custom
+        Formula := 
+        Calibration Data :< 
+          Sensor Serial := 
+          Model := 
+          Tip Type := None
+          Parameter Names :[ 
+            
+          Parameter Names :]
+          Parameters :[ 
+            
+          Parameters :]
+        Calibration Data :>
+      Function :>
+      Available Variables :[ 
+        :a|:b|
+      Available Variables :]
+      Phases :[ 
+        :<
+          String := All
+          Value := 0
+        :>
+        :<
+          String := Approach&Load
+          Value := 1
+        :>
+        :<
+          String := Loaded Hold
+          Value := 3
+        :>
+        :<
+          String := Unload
+          Value := 4
+        :>
+      Phases :]
+      Available Fits :[ 
+      Available Fits :]
+      Available Functions :[ 
+      Available Functions :]
+      Fit Changed? := Yes
+      Selector Changed? := Yes
+    Hidden :>
+    SquareAbsRel :< 
+      Horizontal RelAbs := Relative
+      Horizontal Minimum := 0
+      Horizontal Maximum := 100
+      Vertical RelAbs := Relative
+      Vertical Minimum := 10
+      Vertical Maximum := 90
+    SquareAbsRel :>
+    AxisSection :< 
+      RelAbs := Relative
+      Minimum := 0
+      Maximum := 0
+      Fitted Axis := Horizontal
+    AxisSection :>
+    VerticalSection :< 
+      Vertical Lower RelAbs := Relative
+      Vertical Minimum := 1
+      Vertical Upper RelAbs := Relative
+      Vertical Maximum := 10
+    VerticalSection :>
+    SingleValue :< 
+      RelAbs := Relative
+      Value := 0
+      Selector Axis := Horizontal
+    SingleValue :>
+    Custom :< 
+      Formula := 
+    Custom :>
+    ContactDepth :< 
+      Formula := 
+      Shown Formula := 
+      MaxPos := 0
+      ContactPos := 0
+      PMax := 0
+      UnloadStiff := 0
+      e := 0
+    ContactDepth :>
+    O&PHardness :< 
+      Formula := 
+      Shown Formula := 
+      PMax := 0
+      A := 0
+    O&PHardness :>
+    O&PReducedModulus :< 
+      Formula := 
+      Shown Formula := 
+      Unload Stiff := 0
+      A := 0
+    O&PReducedModulus :>
+    AreaFunctEvaluation :< 
+      Formula := 
+      Para1 := 0
+      Shown Formula := 
+      Para2 := 0
+      Para3 := 0
+      Para4 := 0
+      Para5 := 0
+      Para6 := 0
+    AreaFunctEvaluation :>
+    Linear :< 
+      Fitted Value := Horiz. Intercept
+    Linear :>
+    Poly2 :< 
+      Fitted Value := C0
+    Poly2 :>
+    Poly3 :< 
+      Fitted Value := C0
+    Poly3 :>
+    Deming :< 
+      Fitted Value := Vertical Intercept
+    Deming :>
+    Mean :< 
+      Direction := Horizontal
+    Mean :>
+    RMS :< 
+      Direction := Horizontal
+    RMS :>
+    Median :< 
+      Direction := Horizontal
+    Median :>
+    Interpolate :< 
+      Type := Linear
+    Interpolate :>
+    MinMax :< 
+      Type := Minimum
+    MinMax :>
+    PowerFit :< 
+      Type := Horiz. Intercept
+    PowerFit :>
+    Hysteresis :< 
+      Type := Standard
+    Hysteresis :>
+    NonLinearity :< 
+      Type := Absolute
+    NonLinearity :>
+    Threshold :< 
+      Type := First above
+    Threshold :>
+  :>
+  :<
+    ListData :< 
+      Var := b
+      Type := Fit
+      Name := Stiffness
+      Unit := [N/m]
+    ListData :>
+    Hidden :< 
+      FFType := Fit
+      Fit :< 
+        Horizontal := Displacement
+        Vertical := Force A
+        Selected Fit := Linear
+        Selected Phases :[ 
+          :1|
+        Selected Phases :]
+        Selected Selector := SquareAbsRel
+      Fit :>
+      Function :< 
+        Selected Function := Custom
+        Formula := 
+        Calibration Data :< 
+          Sensor Serial := 
+          Model := 
+          Tip Type := None
+          Parameter Names :[ 
+            
+          Parameter Names :]
+          Parameters :[ 
+            
+          Parameters :]
+        Calibration Data :>
+      Function :>
+      Available Variables :[ 
+        :a|:b|
+      Available Variables :]
+      Phases :[ 
+        :<
+          String := All
+          Value := 0
+        :>
+        :<
+          String := Approach&Load
+          Value := 1
+        :>
+        :<
+          String := Loaded Hold
+          Value := 3
+        :>
+        :<
+          String := Unload
+          Value := 4
+        :>
+      Phases :]
+      Available Fits :[ 
+      Available Fits :]
+      Available Functions :[ 
+      Available Functions :]
+      Fit Changed? := Yes
+      Selector Changed? := Yes
+    Hidden :>
+    SquareAbsRel :< 
+      Horizontal RelAbs := Relative
+      Horizontal Minimum := 0
+      Horizontal Maximum := 100
+      Vertical RelAbs := Relative
+      Vertical Minimum := 10
+      Vertical Maximum := 90
+    SquareAbsRel :>
+    AxisSection :< 
+      RelAbs := Relative
+      Minimum := 0
+      Maximum := 0
+      Fitted Axis := Horizontal
+    AxisSection :>
+    VerticalSection :< 
+      Vertical Lower RelAbs := Relative
+      Vertical Minimum := 0
+      Vertical Upper RelAbs := Relative
+      Vertical Maximum := 0
+    VerticalSection :>
+    SingleValue :< 
+      RelAbs := Relative
+      Value := 0
+      Selector Axis := Horizontal
+    SingleValue :>
+    Custom :< 
+      Formula := 
+    Custom :>
+    ContactDepth :< 
+      Formula := 
+      Shown Formula := 
+      MaxPos := 0
+      ContactPos := 0
+      PMax := 0
+      UnloadStiff := 0
+      e := 0
+    ContactDepth :>
+    O&PHardness :< 
+      Formula := 
+      Shown Formula := 
+      PMax := 0
+      A := 0
+    O&PHardness :>
+    O&PReducedModulus :< 
+      Formula := 
+      Shown Formula := 
+      Unload Stiff := 0
+      A := 0
+    O&PReducedModulus :>
+    AreaFunctEvaluation :< 
+      Formula := 
+      Para1 := 0
+      Shown Formula := 
+      Para2 := 0
+      Para3 := 0
+      Para4 := 0
+      Para5 := 0
+      Para6 := 0
+    AreaFunctEvaluation :>
+    Linear :< 
+      Fitted Value := Slope
+    Linear :>
+    Poly2 :< 
+      Fitted Value := C0
+    Poly2 :>
+    Poly3 :< 
+      Fitted Value := C0
+    Poly3 :>
+    Deming :< 
+      Fitted Value := Vertical Intercept
+    Deming :>
+    Mean :< 
+      Direction := Horizontal
+    Mean :>
+    RMS :< 
+      Direction := Horizontal
+    RMS :>
+    Median :< 
+      Direction := Horizontal
+    Median :>
+    Interpolate :< 
+      Type := Linear
+    Interpolate :>
+    MinMax :< 
+      Type := Minimum
+    MinMax :>
+    PowerFit :< 
+      Type := Horiz. Intercept
+    PowerFit :>
+    Hysteresis :< 
+      Type := Standard
+    Hysteresis :>
+    NonLinearity :< 
+      Type := Absolute
+    NonLinearity :>
+    Threshold :< 
+      Type := First above
+    Threshold :>
+  :>
+FitsFunctions :]

@@ -1,0 +1,1825 @@
+Description :< 
+  Version := v2.1.3.0
+  Data folder := C:\Users\IT080142-User\Documents\FemtoTools\CT_C_2021-09-22,11h09m03s
+  Model := FT-MTA03A
+  Sensor Serial := FT S2000 190611 1
+  Type := Compression
+  Phases :[ 
+    :<
+      String := All
+      Value := 0
+    :>
+    :<
+      String := Approach&Load
+      Value := 1
+    :>
+    :<
+      String := Loaded Hold
+      Value := 3
+    :>
+    :<
+      String := Unload
+      Value := 4
+    :>
+  Phases :]
+  Column :[ 
+    :<
+      Name := Index
+      Unit := [#]
+      Variable := A
+      File := A-Index.bin
+      Formula := 
+    :>
+    :<
+      Name := Phase
+      Unit := [#]
+      Variable := B
+      File := B-Phase.bin
+      Formula := 
+    :>
+    :<
+      Name := Displacement
+      Unit := [um]
+      Variable := C
+      File := C-Displacement.bin
+      Formula := 
+    :>
+    :<
+      Name := Time
+      Unit := [s]
+      Variable := D
+      File := D-Time.bin
+      Formula := 
+    :>
+    :<
+      Name := Pos X
+      Unit := [um]
+      Variable := E
+      File := E-Pos X.bin
+      Formula := 
+    :>
+    :<
+      Name := Pos Y
+      Unit := [um]
+      Variable := F
+      File := F-Pos Y.bin
+      Formula := 
+    :>
+    :<
+      Name := Pos Z
+      Unit := [um]
+      Variable := G
+      File := G-Pos Z.bin
+      Formula := 
+    :>
+    :<
+      Name := Piezo X
+      Unit := [um]
+      Variable := H
+      File := H-Piezo X.bin
+      Formula := 
+    :>
+    :<
+      Name := Piezo Y
+      Unit := [um]
+      Variable := I
+      File := I-Piezo Y.bin
+      Formula := 
+    :>
+    :<
+      Name := Piezo Z
+      Unit := [um]
+      Variable := J
+      File := J-Piezo Z.bin
+      Formula := 
+    :>
+    :<
+      Name := Force A
+      Unit := [uN]
+      Variable := K
+      File := K-Force A.bin
+      Formula := 
+    :>
+    :<
+      Name := Force B
+      Unit := [uN]
+      Variable := L
+      File := L-Force B.bin
+      Formula := 
+    :>
+    :<
+      Name := Gripper
+      Unit := [V]
+      Variable := M
+      File := M-Gripper.bin
+      Formula := 
+    :>
+    :<
+      Name := Voltage A
+      Unit := [V]
+      Variable := N
+      File := N-Voltage A.bin
+      Formula := 
+    :>
+    :<
+      Name := Voltage B
+      Unit := [V]
+      Variable := O
+      File := O-Voltage B.bin
+      Formula := 
+    :>
+    :<
+      Name := Temperature
+      Unit := [°C]
+      Variable := P
+      File := P-Temperature.bin
+      Formula := 
+    :>
+  Column :]
+Description :>
+// ================================
+2021-09-22, 11:18:11, 0 :< 
+  Type := Compression
+  System Settings :< 
+    Max drive frequency [Hz] := 1000
+    SPM Threshold [%] := 40
+    Measurements in memory := 100
+    Reference stiffness [N/m] := 1085
+    Power save mode := No
+    Data storage folder := C:\Users\IT080142-User\Documents\FemtoTools\CT_C_2021-09-22,11h09m03s
+  System Settings :>
+  Compression Tensile :< 
+    Array Measurement := No
+    Expert Mode := Yes
+    Find Contact Basic :< 
+      Direction := Pos Z-(down)
+      Distance [um] := 1000000
+      Max Force [uN] := 28
+      Speed [um/s] := 100
+      Move Back [um] := 10
+    Find Contact Basic :>
+    Measurement Basic :< 
+      Measurements [1/s] := 1.06993527848
+      Step size [um] := 1
+      Max Force [uN] := 2243
+      Max. Displacement [um] := 50
+      Return := Measure on return
+      Direction := Piezo Z+(up)
+    Measurement Basic :>
+    Array Basic :< 
+      Direction A := Pos X+(right)
+      Direction B := Pos Y+(back)
+      Range 1 := 1000
+      Range 2 := 1000
+      Samples 1 := 5
+      Samples 2 := 5
+      Range 3 := 200
+      Direction C := Pos Z+(up)
+      Mode := an array in directions A&B from the sensor position
+    Array Basic :>
+    Find Contact Expert :< 
+      Direction := Pos Z-(down)
+      Channel := 0
+      Mode := Position
+      Distance [um] := 1000000
+      Move back [um] := 120
+      Speed [um/s] := 20
+      Acceleration [um/s²] := 10000
+      Min Force [uN] := -28
+      Max Force [uN] := 28
+      Filter := 0
+    Find Contact Expert :>
+    Measurement Expert :< 
+      Direction := Pos Z-(down)
+      Channel := 0
+      Mode := Step
+      Distance [um] := 200
+      Step size [um] := 0.5
+      Speed [um/s] := 10
+      Acceleration [um/s²] := 106.993527848
+      Min Force [uN] := -2243
+      Max Force [uN] := 2243
+      Filter := 0
+      Return := Measure on return
+      Sampling rate := 0
+      Wait [s] := 0.1
+    Measurement Expert :>
+    Array Expert :< 
+      Direction A := Pos X+(right)
+      Direction B := Pos Y+(back)
+      Direction C := Pos Z+(up)
+      Range 1 := 1000
+      Range 2 := 1000
+      Range 3 := 200
+      Samples 1 := 5
+      Samples 2 := 5
+      Absolute := No
+      Speed := 500
+      Delay := 0.5
+      Mode := an array in directions A&B from the sensor position
+    Array Expert :>
+  Compression Tensile :>
+  Phases :[ 
+    :<
+      String := All
+      Value := 0
+    :>
+    :<
+      String := Approach&Load
+      Value := 1
+    :>
+    :<
+      String := Loaded Hold
+      Value := 3
+    :>
+    :<
+      String := Unload
+      Value := 4
+    :>
+  Phases :]
+  Calibration Data :< 
+    Sensor Serial := FT S2000 190611 1
+    Model := FT-MTA03A
+    Tip Type := None
+    Parameter Names :[ 
+      
+    Parameter Names :]
+    Parameters :[ 
+      
+    Parameters :]
+  Calibration Data :>
+  Compliance calibration :< 
+    Model := 
+    Serial := 
+    Configuration := 
+    Axis A := 
+    Axis B := 
+    Compliance fit :[ 
+      
+    Compliance fit :]
+  Compliance calibration :>
+2021-09-22, 11:18:11, 0 :>
+
+0	801	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+// ================================
+2021-09-22, 11:37:57, 1 :< 
+  Type := Compression
+  System Settings :< 
+    Max drive frequency [Hz] := 1000
+    SPM Threshold [%] := 40
+    Measurements in memory := 100
+    Reference stiffness [N/m] := 1085
+    Power save mode := No
+    Data storage folder := C:\Users\IT080142-User\Documents\FemtoTools\CT_C_2021-09-22,11h09m03s
+  System Settings :>
+  Compression Tensile :< 
+    Array Measurement := No
+    Expert Mode := Yes
+    Find Contact Basic :< 
+      Direction := Pos Z-(down)
+      Distance [um] := 1000000
+      Max Force [uN] := 28
+      Speed [um/s] := 100
+      Move Back [um] := 10
+    Find Contact Basic :>
+    Measurement Basic :< 
+      Measurements [1/s] := 1.06993527848
+      Step size [um] := 1
+      Max Force [uN] := 2243
+      Max. Displacement [um] := 50
+      Return := Measure on return
+      Direction := Piezo Z+(up)
+    Measurement Basic :>
+    Array Basic :< 
+      Direction A := Pos X+(right)
+      Direction B := Pos Y+(back)
+      Range 1 := 1000
+      Range 2 := 1000
+      Samples 1 := 5
+      Samples 2 := 5
+      Range 3 := 200
+      Direction C := Pos Z+(up)
+      Mode := an array in directions A&B from the sensor position
+    Array Basic :>
+    Find Contact Expert :< 
+      Direction := Pos Z-(down)
+      Channel := 0
+      Mode := Position
+      Distance [um] := 1000000
+      Move back [um] := 120
+      Speed [um/s] := 20
+      Acceleration [um/s²] := 10000
+      Min Force [uN] := -28
+      Max Force [uN] := 28
+      Filter := 0
+    Find Contact Expert :>
+    Measurement Expert :< 
+      Direction := Pos Z-(down)
+      Channel := 0
+      Mode := Step
+      Distance [um] := 200
+      Step size [um] := 0.5
+      Speed [um/s] := 20
+      Acceleration [um/s²] := 106.993527848
+      Min Force [uN] := -160
+      Max Force [uN] := 160
+      Filter := 0
+      Return := Measure on return
+      Sampling rate := 0
+      Wait [s] := 0.05
+    Measurement Expert :>
+    Array Expert :< 
+      Direction A := Pos X+(right)
+      Direction B := Pos Y+(back)
+      Direction C := Pos Z+(up)
+      Range 1 := 1000
+      Range 2 := 1000
+      Range 3 := 200
+      Samples 1 := 5
+      Samples 2 := 5
+      Absolute := No
+      Speed := 500
+      Delay := 0.5
+      Mode := an array in directions A&B from the sensor position
+    Array Expert :>
+  Compression Tensile :>
+  Phases :[ 
+    :<
+      String := All
+      Value := 0
+    :>
+    :<
+      String := Approach&Load
+      Value := 1
+    :>
+    :<
+      String := Loaded Hold
+      Value := 3
+    :>
+    :<
+      String := Unload
+      Value := 4
+    :>
+  Phases :]
+  Calibration Data :< 
+    Sensor Serial := FT S2000 190611 1
+    Model := FT-MTA03A
+    Tip Type := None
+    Parameter Names :[ 
+      
+    Parameter Names :]
+    Parameters :[ 
+      
+    Parameters :]
+  Calibration Data :>
+  Compliance calibration :< 
+    Model := 
+    Serial := 
+    Configuration := 
+    Axis A := 
+    Axis B := 
+    Compliance fit :[ 
+      
+    Compliance fit :]
+  Compliance calibration :>
+2021-09-22, 11:37:57, 1 :>
+
+6408	752	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+// ================================
+2021-09-22, 11:40:06, 2 :< 
+  Type := Compression
+  System Settings :< 
+    Max drive frequency [Hz] := 1000
+    SPM Threshold [%] := 40
+    Measurements in memory := 100
+    Reference stiffness [N/m] := 1085
+    Power save mode := No
+    Data storage folder := C:\Users\IT080142-User\Documents\FemtoTools\CT_C_2021-09-22,11h09m03s
+  System Settings :>
+  Compression Tensile :< 
+    Array Measurement := No
+    Expert Mode := Yes
+    Find Contact Basic :< 
+      Direction := Pos Z-(down)
+      Distance [um] := 1000000
+      Max Force [uN] := 28
+      Speed [um/s] := 100
+      Move Back [um] := 10
+    Find Contact Basic :>
+    Measurement Basic :< 
+      Measurements [1/s] := 1.06993527848
+      Step size [um] := 1
+      Max Force [uN] := 2243
+      Max. Displacement [um] := 50
+      Return := Measure on return
+      Direction := Piezo Z+(up)
+    Measurement Basic :>
+    Array Basic :< 
+      Direction A := Pos X+(right)
+      Direction B := Pos Y+(back)
+      Range 1 := 1000
+      Range 2 := 1000
+      Samples 1 := 5
+      Samples 2 := 5
+      Range 3 := 200
+      Direction C := Pos Z+(up)
+      Mode := an array in directions A&B from the sensor position
+    Array Basic :>
+    Find Contact Expert :< 
+      Direction := Pos Z-(down)
+      Channel := 0
+      Mode := Position
+      Distance [um] := 1000000
+      Move back [um] := 120
+      Speed [um/s] := 20
+      Acceleration [um/s²] := 10000
+      Min Force [uN] := -28
+      Max Force [uN] := 28
+      Filter := 0
+    Find Contact Expert :>
+    Measurement Expert :< 
+      Direction := Pos Z-(down)
+      Channel := 0
+      Mode := Step
+      Distance [um] := 200
+      Step size [um] := 0.5
+      Speed [um/s] := 20
+      Acceleration [um/s²] := 106.993527848
+      Min Force [uN] := -160
+      Max Force [uN] := 160
+      Filter := 0
+      Return := Measure on return
+      Sampling rate := 0
+      Wait [s] := 0.05
+    Measurement Expert :>
+    Array Expert :< 
+      Direction A := Pos X+(right)
+      Direction B := Pos Y+(back)
+      Direction C := Pos Z+(up)
+      Range 1 := 1000
+      Range 2 := 1000
+      Range 3 := 200
+      Samples 1 := 5
+      Samples 2 := 5
+      Absolute := No
+      Speed := 500
+      Delay := 0.5
+      Mode := an array in directions A&B from the sensor position
+    Array Expert :>
+  Compression Tensile :>
+  Phases :[ 
+    :<
+      String := All
+      Value := 0
+    :>
+    :<
+      String := Approach&Load
+      Value := 1
+    :>
+    :<
+      String := Loaded Hold
+      Value := 3
+    :>
+    :<
+      String := Unload
+      Value := 4
+    :>
+  Phases :]
+  Calibration Data :< 
+    Sensor Serial := FT S2000 190611 1
+    Model := FT-MTA03A
+    Tip Type := None
+    Parameter Names :[ 
+      
+    Parameter Names :]
+    Parameters :[ 
+      
+    Parameters :]
+  Calibration Data :>
+  Compliance calibration :< 
+    Model := 
+    Serial := 
+    Configuration := 
+    Axis A := 
+    Axis B := 
+    Compliance fit :[ 
+      
+    Compliance fit :]
+  Compliance calibration :>
+2021-09-22, 11:40:06, 2 :>
+
+12424	552	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+// ================================
+2021-09-22, 11:41:09, 3 :< 
+  Type := Compression
+  System Settings :< 
+    Max drive frequency [Hz] := 1000
+    SPM Threshold [%] := 40
+    Measurements in memory := 100
+    Reference stiffness [N/m] := 1085
+    Power save mode := No
+    Data storage folder := C:\Users\IT080142-User\Documents\FemtoTools\CT_C_2021-09-22,11h09m03s
+  System Settings :>
+  Compression Tensile :< 
+    Array Measurement := No
+    Expert Mode := Yes
+    Find Contact Basic :< 
+      Direction := Pos Z-(down)
+      Distance [um] := 1000000
+      Max Force [uN] := 28
+      Speed [um/s] := 100
+      Move Back [um] := 10
+    Find Contact Basic :>
+    Measurement Basic :< 
+      Measurements [1/s] := 1.06993527848
+      Step size [um] := 1
+      Max Force [uN] := 2243
+      Max. Displacement [um] := 50
+      Return := Measure on return
+      Direction := Piezo Z+(up)
+    Measurement Basic :>
+    Array Basic :< 
+      Direction A := Pos X+(right)
+      Direction B := Pos Y+(back)
+      Range 1 := 1000
+      Range 2 := 1000
+      Samples 1 := 5
+      Samples 2 := 5
+      Range 3 := 200
+      Direction C := Pos Z+(up)
+      Mode := an array in directions A&B from the sensor position
+    Array Basic :>
+    Find Contact Expert :< 
+      Direction := Pos Z-(down)
+      Channel := 0
+      Mode := Position
+      Distance [um] := 1000000
+      Move back [um] := 60
+      Speed [um/s] := 20
+      Acceleration [um/s²] := 10000
+      Min Force [uN] := -28
+      Max Force [uN] := 28
+      Filter := 0
+    Find Contact Expert :>
+    Measurement Expert :< 
+      Direction := Pos Z-(down)
+      Channel := 0
+      Mode := Step
+      Distance [um] := 200
+      Step size [um] := 0.5
+      Speed [um/s] := 20
+      Acceleration [um/s²] := 106.993527848
+      Min Force [uN] := -160
+      Max Force [uN] := 160
+      Filter := 0
+      Return := Measure on return
+      Sampling rate := 0
+      Wait [s] := 0.05
+    Measurement Expert :>
+    Array Expert :< 
+      Direction A := Pos X+(right)
+      Direction B := Pos Y+(back)
+      Direction C := Pos Z+(up)
+      Range 1 := 1000
+      Range 2 := 1000
+      Range 3 := 200
+      Samples 1 := 5
+      Samples 2 := 5
+      Absolute := No
+      Speed := 500
+      Delay := 0.5
+      Mode := an array in directions A&B from the sensor position
+    Array Expert :>
+  Compression Tensile :>
+  Phases :[ 
+    :<
+      String := All
+      Value := 0
+    :>
+    :<
+      String := Approach&Load
+      Value := 1
+    :>
+    :<
+      String := Loaded Hold
+      Value := 3
+    :>
+    :<
+      String := Unload
+      Value := 4
+    :>
+  Phases :]
+  Calibration Data :< 
+    Sensor Serial := FT S2000 190611 1
+    Model := FT-MTA03A
+    Tip Type := None
+    Parameter Names :[ 
+      
+    Parameter Names :]
+    Parameters :[ 
+      
+    Parameters :]
+  Calibration Data :>
+  Compliance calibration :< 
+    Model := 
+    Serial := 
+    Configuration := 
+    Axis A := 
+    Axis B := 
+    Compliance fit :[ 
+      
+    Compliance fit :]
+  Compliance calibration :>
+2021-09-22, 11:41:09, 3 :>
+
+16840	316	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+// ================================
+2021-09-22, 11:41:45, 4 :< 
+  Type := Compression
+  System Settings :< 
+    Max drive frequency [Hz] := 1000
+    SPM Threshold [%] := 40
+    Measurements in memory := 100
+    Reference stiffness [N/m] := 1085
+    Power save mode := No
+    Data storage folder := C:\Users\IT080142-User\Documents\FemtoTools\CT_C_2021-09-22,11h09m03s
+  System Settings :>
+  Compression Tensile :< 
+    Array Measurement := No
+    Expert Mode := Yes
+    Find Contact Basic :< 
+      Direction := Pos Z-(down)
+      Distance [um] := 1000000
+      Max Force [uN] := 28
+      Speed [um/s] := 100
+      Move Back [um] := 10
+    Find Contact Basic :>
+    Measurement Basic :< 
+      Measurements [1/s] := 1.06993527848
+      Step size [um] := 1
+      Max Force [uN] := 2243
+      Max. Displacement [um] := 50
+      Return := Measure on return
+      Direction := Piezo Z+(up)
+    Measurement Basic :>
+    Array Basic :< 
+      Direction A := Pos X+(right)
+      Direction B := Pos Y+(back)
+      Range 1 := 1000
+      Range 2 := 1000
+      Samples 1 := 5
+      Samples 2 := 5
+      Range 3 := 200
+      Direction C := Pos Z+(up)
+      Mode := an array in directions A&B from the sensor position
+    Array Basic :>
+    Find Contact Expert :< 
+      Direction := Pos Z-(down)
+      Channel := 0
+      Mode := Position
+      Distance [um] := 1000000
+      Move back [um] := 60
+      Speed [um/s] := 20
+      Acceleration [um/s²] := 10000
+      Min Force [uN] := -28
+      Max Force [uN] := 28
+      Filter := 0
+    Find Contact Expert :>
+    Measurement Expert :< 
+      Direction := Pos Z-(down)
+      Channel := 0
+      Mode := Step
+      Distance [um] := 120
+      Step size [um] := 0.5
+      Speed [um/s] := 20
+      Acceleration [um/s²] := 106.993527848
+      Min Force [uN] := -160
+      Max Force [uN] := 160
+      Filter := 0
+      Return := Measure on return
+      Sampling rate := 0
+      Wait [s] := 0.05
+    Measurement Expert :>
+    Array Expert :< 
+      Direction A := Pos X+(right)
+      Direction B := Pos Y+(back)
+      Direction C := Pos Z+(up)
+      Range 1 := 1000
+      Range 2 := 1000
+      Range 3 := 200
+      Samples 1 := 5
+      Samples 2 := 5
+      Absolute := No
+      Speed := 500
+      Delay := 0.5
+      Mode := an array in directions A&B from the sensor position
+    Array Expert :>
+  Compression Tensile :>
+  Phases :[ 
+    :<
+      String := All
+      Value := 0
+    :>
+    :<
+      String := Approach&Load
+      Value := 1
+    :>
+    :<
+      String := Loaded Hold
+      Value := 3
+    :>
+    :<
+      String := Unload
+      Value := 4
+    :>
+  Phases :]
+  Calibration Data :< 
+    Sensor Serial := FT S2000 190611 1
+    Model := FT-MTA03A
+    Tip Type := None
+    Parameter Names :[ 
+      
+    Parameter Names :]
+    Parameters :[ 
+      
+    Parameters :]
+  Calibration Data :>
+  Compliance calibration :< 
+    Model := 
+    Serial := 
+    Configuration := 
+    Axis A := 
+    Axis B := 
+    Compliance fit :[ 
+      
+    Compliance fit :]
+  Compliance calibration :>
+2021-09-22, 11:41:45, 4 :>
+
+19368	316	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+// ================================
+2021-09-22, 11:42:20, 5 :< 
+  Type := Compression
+  System Settings :< 
+    Max drive frequency [Hz] := 1000
+    SPM Threshold [%] := 40
+    Measurements in memory := 100
+    Reference stiffness [N/m] := 1085
+    Power save mode := No
+    Data storage folder := C:\Users\IT080142-User\Documents\FemtoTools\CT_C_2021-09-22,11h09m03s
+  System Settings :>
+  Compression Tensile :< 
+    Array Measurement := No
+    Expert Mode := Yes
+    Find Contact Basic :< 
+      Direction := Pos Z-(down)
+      Distance [um] := 1000000
+      Max Force [uN] := 28
+      Speed [um/s] := 100
+      Move Back [um] := 10
+    Find Contact Basic :>
+    Measurement Basic :< 
+      Measurements [1/s] := 1.06993527848
+      Step size [um] := 1
+      Max Force [uN] := 2243
+      Max. Displacement [um] := 50
+      Return := Measure on return
+      Direction := Piezo Z+(up)
+    Measurement Basic :>
+    Array Basic :< 
+      Direction A := Pos X+(right)
+      Direction B := Pos Y+(back)
+      Range 1 := 1000
+      Range 2 := 1000
+      Samples 1 := 5
+      Samples 2 := 5
+      Range 3 := 200
+      Direction C := Pos Z+(up)
+      Mode := an array in directions A&B from the sensor position
+    Array Basic :>
+    Find Contact Expert :< 
+      Direction := Pos Z-(down)
+      Channel := 0
+      Mode := Position
+      Distance [um] := 1000000
+      Move back [um] := 60
+      Speed [um/s] := 20
+      Acceleration [um/s²] := 10000
+      Min Force [uN] := -28
+      Max Force [uN] := 28
+      Filter := 0
+    Find Contact Expert :>
+    Measurement Expert :< 
+      Direction := Pos Z-(down)
+      Channel := 0
+      Mode := Step
+      Distance [um] := 120
+      Step size [um] := 0.5
+      Speed [um/s] := 15
+      Acceleration [um/s²] := 106.993527848
+      Min Force [uN] := -300
+      Max Force [uN] := 300
+      Filter := 0
+      Return := Measure on return
+      Sampling rate := 0
+      Wait [s] := 0.05
+    Measurement Expert :>
+    Array Expert :< 
+      Direction A := Pos X+(right)
+      Direction B := Pos Y+(back)
+      Direction C := Pos Z+(up)
+      Range 1 := 1000
+      Range 2 := 1000
+      Range 3 := 200
+      Samples 1 := 5
+      Samples 2 := 5
+      Absolute := No
+      Speed := 500
+      Delay := 0.5
+      Mode := an array in directions A&B from the sensor position
+    Array Expert :>
+  Compression Tensile :>
+  Phases :[ 
+    :<
+      String := All
+      Value := 0
+    :>
+    :<
+      String := Approach&Load
+      Value := 1
+    :>
+    :<
+      String := Loaded Hold
+      Value := 3
+    :>
+    :<
+      String := Unload
+      Value := 4
+    :>
+  Phases :]
+  Calibration Data :< 
+    Sensor Serial := FT S2000 190611 1
+    Model := FT-MTA03A
+    Tip Type := None
+    Parameter Names :[ 
+      
+    Parameter Names :]
+    Parameters :[ 
+      
+    Parameters :]
+  Calibration Data :>
+  Compliance calibration :< 
+    Model := 
+    Serial := 
+    Configuration := 
+    Axis A := 
+    Axis B := 
+    Compliance fit :[ 
+      
+    Compliance fit :]
+  Compliance calibration :>
+2021-09-22, 11:42:20, 5 :>
+
+21896	374	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+// ================================
+2021-09-22, 11:44:17, 6 :< 
+  Type := Compression
+  System Settings :< 
+    Max drive frequency [Hz] := 1000
+    SPM Threshold [%] := 40
+    Measurements in memory := 100
+    Reference stiffness [N/m] := 1085
+    Power save mode := No
+    Data storage folder := C:\Users\IT080142-User\Documents\FemtoTools\CT_C_2021-09-22,11h09m03s
+  System Settings :>
+  Compression Tensile :< 
+    Array Measurement := No
+    Expert Mode := Yes
+    Find Contact Basic :< 
+      Direction := Pos Z-(down)
+      Distance [um] := 1000000
+      Max Force [uN] := 28
+      Speed [um/s] := 100
+      Move Back [um] := 10
+    Find Contact Basic :>
+    Measurement Basic :< 
+      Measurements [1/s] := 1.06993527848
+      Step size [um] := 1
+      Max Force [uN] := 2243
+      Max. Displacement [um] := 50
+      Return := Measure on return
+      Direction := Piezo Z+(up)
+    Measurement Basic :>
+    Array Basic :< 
+      Direction A := Pos X+(right)
+      Direction B := Pos Y+(back)
+      Range 1 := 1000
+      Range 2 := 1000
+      Samples 1 := 5
+      Samples 2 := 5
+      Range 3 := 200
+      Direction C := Pos Z+(up)
+      Mode := an array in directions A&B from the sensor position
+    Array Basic :>
+    Find Contact Expert :< 
+      Direction := Pos Z-(down)
+      Channel := 0
+      Mode := Position
+      Distance [um] := 1000000
+      Move back [um] := 60
+      Speed [um/s] := 20
+      Acceleration [um/s²] := 10000
+      Min Force [uN] := -28
+      Max Force [uN] := 28
+      Filter := 0
+    Find Contact Expert :>
+    Measurement Expert :< 
+      Direction := Pos Z-(down)
+      Channel := 0
+      Mode := Step
+      Distance [um] := 120
+      Step size [um] := 0.5
+      Speed [um/s] := 15
+      Acceleration [um/s²] := 106.993527848
+      Min Force [uN] := -300
+      Max Force [uN] := 300
+      Filter := 0
+      Return := Measure on return
+      Sampling rate := 0
+      Wait [s] := 0.05
+    Measurement Expert :>
+    Array Expert :< 
+      Direction A := Pos X+(right)
+      Direction B := Pos Y+(back)
+      Direction C := Pos Z+(up)
+      Range 1 := 1000
+      Range 2 := 1000
+      Range 3 := 200
+      Samples 1 := 5
+      Samples 2 := 5
+      Absolute := No
+      Speed := 500
+      Delay := 0.5
+      Mode := an array in directions A&B from the sensor position
+    Array Expert :>
+  Compression Tensile :>
+  Phases :[ 
+    :<
+      String := All
+      Value := 0
+    :>
+    :<
+      String := Approach&Load
+      Value := 1
+    :>
+    :<
+      String := Loaded Hold
+      Value := 3
+    :>
+    :<
+      String := Unload
+      Value := 4
+    :>
+  Phases :]
+  Calibration Data :< 
+    Sensor Serial := FT S2000 190611 1
+    Model := FT-MTA03A
+    Tip Type := None
+    Parameter Names :[ 
+      
+    Parameter Names :]
+    Parameters :[ 
+      
+    Parameters :]
+  Calibration Data :>
+  Compliance calibration :< 
+    Model := 
+    Serial := 
+    Configuration := 
+    Axis A := 
+    Axis B := 
+    Compliance fit :[ 
+      
+    Compliance fit :]
+  Compliance calibration :>
+2021-09-22, 11:44:17, 6 :>
+
+24888	481	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+// ================================
+2021-09-22, 11:45:17, 7 :< 
+  Type := Compression
+  System Settings :< 
+    Max drive frequency [Hz] := 1000
+    SPM Threshold [%] := 40
+    Measurements in memory := 100
+    Reference stiffness [N/m] := 1085
+    Power save mode := No
+    Data storage folder := C:\Users\IT080142-User\Documents\FemtoTools\CT_C_2021-09-22,11h09m03s
+  System Settings :>
+  Compression Tensile :< 
+    Array Measurement := No
+    Expert Mode := Yes
+    Find Contact Basic :< 
+      Direction := Pos Z-(down)
+      Distance [um] := 1000000
+      Max Force [uN] := 28
+      Speed [um/s] := 100
+      Move Back [um] := 10
+    Find Contact Basic :>
+    Measurement Basic :< 
+      Measurements [1/s] := 1.06993527848
+      Step size [um] := 1
+      Max Force [uN] := 2243
+      Max. Displacement [um] := 50
+      Return := Measure on return
+      Direction := Piezo Z+(up)
+    Measurement Basic :>
+    Array Basic :< 
+      Direction A := Pos X+(right)
+      Direction B := Pos Y+(back)
+      Range 1 := 1000
+      Range 2 := 1000
+      Samples 1 := 5
+      Samples 2 := 5
+      Range 3 := 200
+      Direction C := Pos Z+(up)
+      Mode := an array in directions A&B from the sensor position
+    Array Basic :>
+    Find Contact Expert :< 
+      Direction := Pos Z-(down)
+      Channel := 0
+      Mode := Position
+      Distance [um] := 1000000
+      Move back [um] := 80
+      Speed [um/s] := 20
+      Acceleration [um/s²] := 10000
+      Min Force [uN] := -28
+      Max Force [uN] := 28
+      Filter := 0
+    Find Contact Expert :>
+    Measurement Expert :< 
+      Direction := Pos Z-(down)
+      Channel := 0
+      Mode := Step
+      Distance [um] := 140
+      Step size [um] := 0.5
+      Speed [um/s] := 15
+      Acceleration [um/s²] := 106.993527848
+      Min Force [uN] := -300
+      Max Force [uN] := 300
+      Filter := 0
+      Return := Measure on return
+      Sampling rate := 0
+      Wait [s] := 0.05
+    Measurement Expert :>
+    Array Expert :< 
+      Direction A := Pos X+(right)
+      Direction B := Pos Y+(back)
+      Direction C := Pos Z+(up)
+      Range 1 := 1000
+      Range 2 := 1000
+      Range 3 := 200
+      Samples 1 := 5
+      Samples 2 := 5
+      Absolute := No
+      Speed := 500
+      Delay := 0.5
+      Mode := an array in directions A&B from the sensor position
+    Array Expert :>
+  Compression Tensile :>
+  Phases :[ 
+    :<
+      String := All
+      Value := 0
+    :>
+    :<
+      String := Approach&Load
+      Value := 1
+    :>
+    :<
+      String := Loaded Hold
+      Value := 3
+    :>
+    :<
+      String := Unload
+      Value := 4
+    :>
+  Phases :]
+  Calibration Data :< 
+    Sensor Serial := FT S2000 190611 1
+    Model := FT-MTA03A
+    Tip Type := None
+    Parameter Names :[ 
+      
+    Parameter Names :]
+    Parameters :[ 
+      
+    Parameters :]
+  Calibration Data :>
+  Compliance calibration :< 
+    Model := 
+    Serial := 
+    Configuration := 
+    Axis A := 
+    Axis B := 
+    Compliance fit :[ 
+      
+    Compliance fit :]
+  Compliance calibration :>
+2021-09-22, 11:45:17, 7 :>
+
+28736	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+// ================================
+2021-09-22, 11:46:50, 8 :< 
+  Type := Compression
+  System Settings :< 
+    Max drive frequency [Hz] := 1000
+    SPM Threshold [%] := 40
+    Measurements in memory := 100
+    Reference stiffness [N/m] := 1085
+    Power save mode := No
+    Data storage folder := C:\Users\IT080142-User\Documents\FemtoTools\CT_C_2021-09-22,11h09m03s
+  System Settings :>
+  Compression Tensile :< 
+    Array Measurement := No
+    Expert Mode := Yes
+    Find Contact Basic :< 
+      Direction := Pos Z-(down)
+      Distance [um] := 1000000
+      Max Force [uN] := 28
+      Speed [um/s] := 100
+      Move Back [um] := 10
+    Find Contact Basic :>
+    Measurement Basic :< 
+      Measurements [1/s] := 1.06993527848
+      Step size [um] := 1
+      Max Force [uN] := 2243
+      Max. Displacement [um] := 50
+      Return := Measure on return
+      Direction := Piezo Z+(up)
+    Measurement Basic :>
+    Array Basic :< 
+      Direction A := Pos X+(right)
+      Direction B := Pos Y+(back)
+      Range 1 := 1000
+      Range 2 := 1000
+      Samples 1 := 5
+      Samples 2 := 5
+      Range 3 := 200
+      Direction C := Pos Z+(up)
+      Mode := an array in directions A&B from the sensor position
+    Array Basic :>
+    Find Contact Expert :< 
+      Direction := Pos Z-(down)
+      Channel := 0
+      Mode := Position
+      Distance [um] := 1000000
+      Move back [um] := 80
+      Speed [um/s] := 20
+      Acceleration [um/s²] := 10000
+      Min Force [uN] := -28
+      Max Force [uN] := 28
+      Filter := 0
+    Find Contact Expert :>
+    Measurement Expert :< 
+      Direction := Pos Z-(down)
+      Channel := 0
+      Mode := Step
+      Distance [um] := 140
+      Step size [um] := 0.5
+      Speed [um/s] := 15
+      Acceleration [um/s²] := 106.993527848
+      Min Force [uN] := -500
+      Max Force [uN] := 500
+      Filter := 0
+      Return := Measure on return
+      Sampling rate := 0
+      Wait [s] := 0.05
+    Measurement Expert :>
+    Array Expert :< 
+      Direction A := Pos X+(right)
+      Direction B := Pos Y+(back)
+      Direction C := Pos Z+(up)
+      Range 1 := 1000
+      Range 2 := 1000
+      Range 3 := 200
+      Samples 1 := 5
+      Samples 2 := 5
+      Absolute := No
+      Speed := 500
+      Delay := 0.5
+      Mode := an array in directions A&B from the sensor position
+    Array Expert :>
+  Compression Tensile :>
+  Phases :[ 
+    :<
+      String := All
+      Value := 0
+    :>
+    :<
+      String := Approach&Load
+      Value := 1
+    :>
+    :<
+      String := Loaded Hold
+      Value := 3
+    :>
+    :<
+      String := Unload
+      Value := 4
+    :>
+  Phases :]
+  Calibration Data :< 
+    Sensor Serial := FT S2000 190611 1
+    Model := FT-MTA03A
+    Tip Type := None
+    Parameter Names :[ 
+      
+    Parameter Names :]
+    Parameters :[ 
+      
+    Parameters :]
+  Calibration Data :>
+  Compliance calibration :< 
+    Model := 
+    Serial := 
+    Configuration := 
+    Axis A := 
+    Axis B := 
+    Compliance fit :[ 
+      
+    Compliance fit :]
+  Compliance calibration :>
+2021-09-22, 11:46:50, 8 :>
+
+33224	520	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+// ================================
+2021-09-22, 11:47:48, 9 :< 
+  Type := Compression
+  System Settings :< 
+    Max drive frequency [Hz] := 1000
+    SPM Threshold [%] := 40
+    Measurements in memory := 100
+    Reference stiffness [N/m] := 1085
+    Power save mode := No
+    Data storage folder := C:\Users\IT080142-User\Documents\FemtoTools\CT_C_2021-09-22,11h09m03s
+  System Settings :>
+  Compression Tensile :< 
+    Array Measurement := No
+    Expert Mode := Yes
+    Find Contact Basic :< 
+      Direction := Pos Z-(down)
+      Distance [um] := 1000000
+      Max Force [uN] := 28
+      Speed [um/s] := 100
+      Move Back [um] := 10
+    Find Contact Basic :>
+    Measurement Basic :< 
+      Measurements [1/s] := 1.06993527848
+      Step size [um] := 1
+      Max Force [uN] := 2243
+      Max. Displacement [um] := 50
+      Return := Measure on return
+      Direction := Piezo Z+(up)
+    Measurement Basic :>
+    Array Basic :< 
+      Direction A := Pos X+(right)
+      Direction B := Pos Y+(back)
+      Range 1 := 1000
+      Range 2 := 1000
+      Samples 1 := 5
+      Samples 2 := 5
+      Range 3 := 200
+      Direction C := Pos Z+(up)
+      Mode := an array in directions A&B from the sensor position
+    Array Basic :>
+    Find Contact Expert :< 
+      Direction := Pos Z-(down)
+      Channel := 0
+      Mode := Position
+      Distance [um] := 1000000
+      Move back [um] := 80
+      Speed [um/s] := 20
+      Acceleration [um/s²] := 10000
+      Min Force [uN] := -28
+      Max Force [uN] := 28
+      Filter := 0
+    Find Contact Expert :>
+    Measurement Expert :< 
+      Direction := Pos Z-(down)
+      Channel := 0
+      Mode := Step
+      Distance [um] := 140
+      Step size [um] := 0.5
+      Speed [um/s] := 15
+      Acceleration [um/s²] := 106.993527848
+      Min Force [uN] := -600
+      Max Force [uN] := 600
+      Filter := 0
+      Return := Measure on return
+      Sampling rate := 0
+      Wait [s] := 0.05
+    Measurement Expert :>
+    Array Expert :< 
+      Direction A := Pos X+(right)
+      Direction B := Pos Y+(back)
+      Direction C := Pos Z+(up)
+      Range 1 := 1000
+      Range 2 := 1000
+      Range 3 := 200
+      Samples 1 := 5
+      Samples 2 := 5
+      Absolute := No
+      Speed := 500
+      Delay := 0.5
+      Mode := an array in directions A&B from the sensor position
+    Array Expert :>
+  Compression Tensile :>
+  Phases :[ 
+    :<
+      String := All
+      Value := 0
+    :>
+    :<
+      String := Approach&Load
+      Value := 1
+    :>
+    :<
+      String := Loaded Hold
+      Value := 3
+    :>
+    :<
+      String := Unload
+      Value := 4
+    :>
+  Phases :]
+  Calibration Data :< 
+    Sensor Serial := FT S2000 190611 1
+    Model := FT-MTA03A
+    Tip Type := None
+    Parameter Names :[ 
+      
+    Parameter Names :]
+    Parameters :[ 
+      
+    Parameters :]
+  Calibration Data :>
+  Compliance calibration :< 
+    Model := 
+    Serial := 
+    Configuration := 
+    Axis A := 
+    Axis B := 
+    Compliance fit :[ 
+      
+    Compliance fit :]
+  Compliance calibration :>
+2021-09-22, 11:47:48, 9 :>
+
+37384	548	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+// ================================
+2021-09-22, 11:49:29, 10 :< 
+  Type := Compression
+  System Settings :< 
+    Max drive frequency [Hz] := 1000
+    SPM Threshold [%] := 40
+    Measurements in memory := 100
+    Reference stiffness [N/m] := 1085
+    Power save mode := No
+    Data storage folder := C:\Users\IT080142-User\Documents\FemtoTools\CT_C_2021-09-22,11h09m03s
+  System Settings :>
+  Compression Tensile :< 
+    Array Measurement := No
+    Expert Mode := Yes
+    Find Contact Basic :< 
+      Direction := Pos Z-(down)
+      Distance [um] := 1000000
+      Max Force [uN] := 28
+      Speed [um/s] := 100
+      Move Back [um] := 10
+    Find Contact Basic :>
+    Measurement Basic :< 
+      Measurements [1/s] := 1.06993527848
+      Step size [um] := 1
+      Max Force [uN] := 2243
+      Max. Displacement [um] := 50
+      Return := Measure on return
+      Direction := Piezo Z+(up)
+    Measurement Basic :>
+    Array Basic :< 
+      Direction A := Pos X+(right)
+      Direction B := Pos Y+(back)
+      Range 1 := 1000
+      Range 2 := 1000
+      Samples 1 := 5
+      Samples 2 := 5
+      Range 3 := 200
+      Direction C := Pos Z+(up)
+      Mode := an array in directions A&B from the sensor position
+    Array Basic :>
+    Find Contact Expert :< 
+      Direction := Pos Z-(down)
+      Channel := 0
+      Mode := Position
+      Distance [um] := 1000000
+      Move back [um] := 80
+      Speed [um/s] := 20
+      Acceleration [um/s²] := 10000
+      Min Force [uN] := -28
+      Max Force [uN] := 28
+      Filter := 0
+    Find Contact Expert :>
+    Measurement Expert :< 
+      Direction := Pos Z-(down)
+      Channel := 0
+      Mode := Step
+      Distance [um] := 140
+      Step size [um] := 0.5
+      Speed [um/s] := 15
+      Acceleration [um/s²] := 106.993527848
+      Min Force [uN] := -600
+      Max Force [uN] := 600
+      Filter := 0
+      Return := Measure on return
+      Sampling rate := 0
+      Wait [s] := 0.05
+    Measurement Expert :>
+    Array Expert :< 
+      Direction A := Pos X+(right)
+      Direction B := Pos Y+(back)
+      Direction C := Pos Z+(up)
+      Range 1 := 1000
+      Range 2 := 1000
+      Range 3 := 200
+      Samples 1 := 5
+      Samples 2 := 5
+      Absolute := No
+      Speed := 500
+      Delay := 0.5
+      Mode := an array in directions A&B from the sensor position
+    Array Expert :>
+  Compression Tensile :>
+  Phases :[ 
+    :<
+      String := All
+      Value := 0
+    :>
+    :<
+      String := Approach&Load
+      Value := 1
+    :>
+    :<
+      String := Loaded Hold
+      Value := 3
+    :>
+    :<
+      String := Unload
+      Value := 4
+    :>
+  Phases :]
+  Calibration Data :< 
+    Sensor Serial := FT S2000 190611 1
+    Model := FT-MTA03A
+    Tip Type := None
+    Parameter Names :[ 
+      
+    Parameter Names :]
+    Parameters :[ 
+      
+    Parameters :]
+  Calibration Data :>
+  Compliance calibration :< 
+    Model := 
+    Serial := 
+    Configuration := 
+    Axis A := 
+    Axis B := 
+    Compliance fit :[ 
+      
+    Compliance fit :]
+  Compliance calibration :>
+2021-09-22, 11:49:29, 10 :>
+
+41768	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+// ================================
+2021-09-22, 11:51:55, 11 :< 
+  Type := Compression
+  System Settings :< 
+    Max drive frequency [Hz] := 1000
+    SPM Threshold [%] := 40
+    Measurements in memory := 100
+    Reference stiffness [N/m] := 1085
+    Power save mode := No
+    Data storage folder := C:\Users\IT080142-User\Documents\FemtoTools\CT_C_2021-09-22,11h09m03s
+  System Settings :>
+  Compression Tensile :< 
+    Array Measurement := Yes
+    Expert Mode := Yes
+    Find Contact Basic :< 
+      Direction := Pos Z-(down)
+      Distance [um] := 1000000
+      Max Force [uN] := 28
+      Speed [um/s] := 100
+      Move Back [um] := 10
+    Find Contact Basic :>
+    Measurement Basic :< 
+      Measurements [1/s] := 1.06993527848
+      Step size [um] := 1
+      Max Force [uN] := 2243
+      Max. Displacement [um] := 50
+      Return := Measure on return
+      Direction := Piezo Z+(up)
+    Measurement Basic :>
+    Array Basic :< 
+      Direction A := Pos X+(right)
+      Direction B := Pos Y+(back)
+      Range 1 := 1000
+      Range 2 := 1000
+      Samples 1 := 5
+      Samples 2 := 5
+      Range 3 := 200
+      Direction C := Pos Z+(up)
+      Mode := an array in directions A&B from the sensor position
+    Array Basic :>
+    Find Contact Expert :< 
+      Direction := Pos Z-(down)
+      Channel := 0
+      Mode := Position
+      Distance [um] := 1000000
+      Move back [um] := 80
+      Speed [um/s] := 20
+      Acceleration [um/s²] := 10000
+      Min Force [uN] := -28
+      Max Force [uN] := 28
+      Filter := 0
+    Find Contact Expert :>
+    Measurement Expert :< 
+      Direction := Pos Z-(down)
+      Channel := 0
+      Mode := Step
+      Distance [um] := 140
+      Step size [um] := 0.5
+      Speed [um/s] := 15
+      Acceleration [um/s²] := 106.993527848
+      Min Force [uN] := -600
+      Max Force [uN] := 600
+      Filter := 0
+      Return := Measure on return
+      Sampling rate := 0
+      Wait [s] := 0.05
+    Measurement Expert :>
+    Array Expert :< 
+      Direction A := Pos X+(right)
+      Direction B := Pos Y+(back)
+      Direction C := Pos Z+(up)
+      Range 1 := 4500
+      Range 2 := 4500
+      Range 3 := 400
+      Samples 1 := 10
+      Samples 2 := 10
+      Absolute := No
+      Speed := 500
+      Delay := 0.5
+      Mode := an array in directions A&B from the sensor position
+    Array Expert :>
+  Compression Tensile :>
+  Phases :[ 
+    :<
+      String := All
+      Value := 0
+    :>
+    :<
+      String := Approach&Load
+      Value := 1
+    :>
+    :<
+      String := Loaded Hold
+      Value := 3
+    :>
+    :<
+      String := Unload
+      Value := 4
+    :>
+  Phases :]
+  Calibration Data :< 
+    Sensor Serial := FT S2000 190611 1
+    Model := FT-MTA03A
+    Tip Type := None
+    Parameter Names :[ 
+      
+    Parameter Names :]
+    Parameters :[ 
+      
+    Parameters :]
+  Calibration Data :>
+  Compliance calibration :< 
+    Model := 
+    Serial := 
+    Configuration := 
+    Axis A := 
+    Axis B := 
+    Compliance fit :[ 
+      
+    Compliance fit :]
+  Compliance calibration :>
+2021-09-22, 11:51:55, 11 :>
+
+46256	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+50744	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+55232	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+59720	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+64208	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+68696	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+73184	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+77672	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+82160	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+86648	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+91136	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+95624	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+100112	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+104600	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+109088	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+113576	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+118064	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+122552	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+127040	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+131528	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+136016	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+140504	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+144992	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+149480	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+153968	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+158456	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+162944	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+167432	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+171920	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+176408	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+180896	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+185384	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+189872	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+194360	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+198848	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+203336	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+207824	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+212312	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+216800	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+221288	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+225776	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+230264	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+234752	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+239240	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+243728	542	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+248064	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+252552	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+257040	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+261528	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+266016	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+270504	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+274992	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+279480	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+283968	542	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+288304	536	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+292592	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+297080	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+301568	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+306056	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+310544	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+315032	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+319520	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+324008	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+328496	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+332984	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+337472	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+341960	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+346448	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+350936	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+355424	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+359912	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+364400	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+368888	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+373376	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+377864	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+382352	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+386840	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+391328	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+395816	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+400304	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+404792	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+409280	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+413768	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+418256	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+422744	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+427232	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+431720	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+436208	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+440696	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+445184	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+449672	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+454160	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+458648	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+463136	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+467624	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+472112	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+476600	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+481088	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+485576	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+490064	561	0	1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
